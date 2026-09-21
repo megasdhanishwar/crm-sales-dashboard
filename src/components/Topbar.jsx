@@ -1,5 +1,5 @@
 import React from "react";
-import { Bell, Menu, Search, ChevronDown } from "lucide-react";
+import { Bell, Menu, Search, ChevronDown, User } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
 const titles = {
@@ -45,9 +45,11 @@ export default function Topbar({ onMenu }) {
           <i />
         </button>
         <div className="profile-mini">
-          <div className="avatar">E</div>
+          <div className="avatar">
+            <User size={18} />
+          </div>
           <div className="profile-name">
-            <strong>Eswar</strong>
+            <strong>Admin</strong>
             <span>Admin</span>
           </div>
           <ChevronDown size={16} />
